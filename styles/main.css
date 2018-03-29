@@ -1,0 +1,129 @@
+body {
+	background-color: #E2B0A5;
+	color: #333;
+	font-family: 'Source Code Pro', monospace;
+	font-size: 1rem;
+	overflow-x: hidden;
+}
+
+body::before {
+	background-attachment: fixed;
+	background-image: url('../images/question-space-double.png');
+	background-repeat: space;
+	background-size: 15px auto;
+	border-radius: 50%;
+	content: '';
+	height: 85vh;
+	left: 5vw;
+	opacity: 0.4;
+	position: absolute;
+	transform: rotate(-20deg);
+	width: 85vw;
+}
+
+.main-content {
+	margin-bottom: 30px;
+	margin-top: 8vh;
+	padding: 15px;
+	z-index: 2;
+}
+
+.main-content::before {
+	border: 1px solid #333;
+	box-shadow: 7px 7px rgb(51, 51, 51, 0.9);
+	background-color: rgba(231, 184, 174, 0.9);
+	content: '';
+	height: 100%;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+}
+
+.header {
+	margin: 45px 0 45px 0;
+	text-align: center;
+}
+
+.h1 {
+	font-weight: 600;
+	margin-bottom: 1.25rem;
+	text-transform: uppercase;
+}
+
+.h2 {
+	/* text-transform: capitalize; */
+}
+
+.game, .game__form {
+	text-align: center;
+}
+
+.game__input {
+	border-radius: 50%;
+	font-size: 2rem;
+	height: 120px;
+	text-align: center;
+	width: 120px;
+}
+
+.game__submit {
+	position: absolute;
+	margin-left: -90px;
+	margin-top: 140px;
+}
+
+.game__guesses {
+	list-style: none;
+	margin: 70px 0 30px -40px;
+}
+
+.game__guesses li {
+	background-color: rgb(51, 51, 51, 0.05);
+	border: 1px solid #333;
+	display: inline-block;
+	height: 60px;
+	margin: 15px;
+	padding: 15px;
+	position: relative;
+	text-align: center;
+	width: 60px;
+}
+
+.footer {
+	background-color: rgb(51, 51, 51, 0.8);
+	bottom: 0;
+	color: #E2B0A5;
+	left: 0;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+	z-index: 5;
+}
+
+.footer__logo, .footer__credit {
+	display: inline;
+}
+
+.footer__credit {
+	font-size: 0.8rem;
+	font-weight: 300;
+}
+
+.footer__logo {
+	width: 150px;
+	height: auto;
+	margin: 1em 0.5rem;
+	position: relative;
+	vertical-align: middle;
+}
+
+@media (max-width: 576px){
+	.footer {
+		text-align: left;
+		position: relative;
+	}
+	.footer__logo, .footer__credit {
+		display: block;
+	}
+}

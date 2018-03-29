@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>Guessing Game</title>
+
+	<!-- Bootstrap and CSS here-->
+	<link rel="stylesheet" type="text/css" href="../styles/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="../styles/main.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,600" rel="stylesheet">
+	</head>
+	<body>
+	<div class="container">
+	<div class="row">
+	<section id='app' role='main' class="main-content col-md-8 offset-md-2">
+		
+		<header id='header' class="header">
+			<h1 class="h1">Play the guessing game!</h1>
+			<h2 class="h2">Guess a number between 1 and 100.</h2>
+		</header>
+
+		<section id='game-area' class="game">
+			
+			<form class="game__form" action="index.html" method="post">
+				<label for="numberGuess" class="sr-only">enter your guess</label>
+				<input type="number" name="" value="" maxlength="3" placeholder="#" autofocus="autofocus" id="numberGuess" class="game__input"/>
+				<button type="button" name="button" id="submit" class="game__submit">guess</button>
+			</form>
+
+			<ul class="game__guesses">
+				<li>?</li>
+				<li>?</li>
+				<li>?</li>
+				<li>?</li>
+				<li>?</li>
+				<li>?</li>
+			</ul>
+
+			<div id="game-option-btns">
+				<button type="button" name="button">reset</button>
+				<button type="button" name="button">hint</button>
+			</div>
+			
+		</section>
+	</section>
+	</div>
+	</div>
+	
+	<footer class='footer container-fluid'>
+		<img src='../images/fa-logo@2x.png' class="footer__logo" />
+		<h4 class="footer__credit">project by lizz thabet</h4>
+		<img src='../images/grace_hopper_academy.png' class="footer__logo" />
+	</footer>
+
+	</body>
+</html>
